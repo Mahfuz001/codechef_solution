@@ -24,26 +24,7 @@ int main(){
     //freopen("output.txt","w",stdout);
     #endif
     
-    int t,k,m,s;
-    cin>>t;
-    
-    while (t--) {
-        int n,NS=0;
-        cin>>n;
-        for (int i=0;i<n;i++) {
-            int x;
-            cin>>x;
-            if(x<0) NS++;
-        }
-        n -= NS;
-        if(NS>0 && n>0){
-            cout<<max(n,NS)<<" "<<min(n,NS);nl;
-        }else if(n == 0){
-            cout<<NS<<" " << NS;nl;
-        }else if(NS == 0){
-            cout<<n<<" "<<n;nl;
-        }
-    }
+    //this code will be published after the contest
     
     return 0;
 }
